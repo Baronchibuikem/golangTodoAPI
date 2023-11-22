@@ -1,0 +1,18 @@
+# air.toml
+
+# Watch these file extensions for changes.
+extensions = ["go", "html", "env"]
+
+# Ignore these paths or files.
+exclude_dir = ["assets", "tmp", "vendor"]
+
+# Choose the working directory.
+root = "." 
+
+[[watcher]]
+# Choose the folder.
+go_paths = ["./"]
+
+# Choose the binary file.
+build_cmd = "go build -o ./tmp/main ."
+run_cmd = "./tmp/main"
